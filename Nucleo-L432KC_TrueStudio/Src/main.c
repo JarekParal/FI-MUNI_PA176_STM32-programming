@@ -105,8 +105,14 @@ int main(void)
   while (1)
   {
 	  // Simple LED blinking
-	  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
-	  HAL_Delay(500);
+	  //HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
+	  //HAL_Delay(500);
+
+	  // Simple LED blinking - alternative
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, 0);
+	  HAL_Delay(100);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, 1);
+	  HAL_Delay(100);
 
   /* USER CODE END WHILE */
 
