@@ -104,6 +104,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  // Simple LED blinking
+	  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
+	  HAL_Delay(500);
 
   /* USER CODE END WHILE */
 
